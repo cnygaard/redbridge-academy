@@ -2,8 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: caas
-  labels:
-    app: caas
+    labels:
+      app: caas
 spec:
   replicas: 1
   revisionHistoryLimit: 1
