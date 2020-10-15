@@ -11,14 +11,14 @@ spec:
     matchLabels:
       app: caas
   template:
-  metadata:
-    labels:
-      app: caas
-  spec:
-    containers:
-    - name: caas
-      image: redbridge/caas:1
-      imagePullPolicy: Always
-      ports:
-      - name: web
-        containerPort: 8080
+    metadata:
+      labels:
+        app: caas
+    spec:
+      containers:
+      - name: caas
+        image: redbridge/caas:1
+        imagePullPolicy: Always
+        ports:
+        - name: web
+          containerPort: 8080
